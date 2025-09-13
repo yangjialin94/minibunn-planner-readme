@@ -2,7 +2,9 @@
 
 Minibunn Planner is a **full-stack productivity web application** designed to help users organize their **tasks, notes, journals, and calendars** in one seamless experience. It combines a clean and modern interface with a robust backend to support authentication, subscriptions, and reliable data storage.
 
-👉 This repository is **public for recruiters and collaborators to review the project’s scope and technology choices**. The source code remains private.
+👉 Live site: [minibunnplanner.com](https://www.minibunnplanner.com/)  
+👉 This repository is **public for recruiters and collaborators to review the project’s scope and technology choices**.  
+The source code remains private.
 
 ---
 
