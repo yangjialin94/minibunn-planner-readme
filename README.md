@@ -71,7 +71,7 @@ Minibunn Planner is a **full-stack productivity web application** designed to he
 Interested in learning more about Minibunn Planner?  
 - **Portfolio**: [jialinyang.com](https://www.jialinyang.com)
 - **LinkedIn**: [linkedin.com/in/jialinyang](https://www.linkedin.com/in/jialinyang)
-- **Email**: contact@minibunnplanner.com
+- **Email**: work@jialinyang.com
 
 ---
 
