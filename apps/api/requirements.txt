@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+sqlalchemy
+sqlalchemy-utils
+black
+psycopg2
+pytest
+httpx
+apscheduler
+firebase_admin
+alembic
+stripe
+python-dotenv
+pyjwt
+loguru

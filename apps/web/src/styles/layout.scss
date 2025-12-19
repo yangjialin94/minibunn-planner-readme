@@ -1,0 +1,86 @@
+html {
+  @apply h-[100dvh];
+}
+
+body {
+  @apply flex h-full flex-col bg-white text-sm text-neutral-800;
+}
+
+.main-container {
+  @apply flex-1 overflow-hidden;
+}
+
+header {
+  @apply flex h-[60px] items-center justify-between p-4;
+}
+
+.sidebar-main {
+  @apply flex h-[calc(100dvh-74px)];
+}
+
+main {
+  @apply w-full;
+}
+
+h1 {
+  @apply text-xl font-semibold;
+}
+
+h2 {
+  @apply text-lg;
+}
+
+.page-content {
+  @apply flex h-full flex-col overflow-hidden rounded-xl border-neutral-300 sm:mx-4 sm:border;
+}
+
+/**
+  * Sidebar
+  */
+
+aside {
+  @apply fixed z-30 flex h-[calc(100dvh-60px)] w-[250px] flex-col justify-between bg-white py-4 pr-4 pl-4 md:relative md:h-full md:pr-0;
+}
+
+.sidebar-top {
+  @apply flex flex-col gap-4;
+}
+
+.sidebar-bottom {
+  @apply flex-col gap-4;
+}
+
+nav > a {
+  @apply flex items-center justify-between rounded-xl px-3 py-2 text-sm hover:bg-neutral-300;
+}
+
+nav > a.selected {
+  @apply pointer-events-none flex items-center gap-2 rounded-xl bg-neutral-300 px-3 py-2 text-sm;
+}
+
+.navBtn {
+  @apply flex items-center gap-2 rounded-xl px-3 py-2 hover:bg-neutral-300;
+}
+
+.navBtn.selected {
+  @apply pointer-events-none flex items-center gap-2 rounded-xl bg-neutral-300 px-3 py-2;
+}
+
+.sidebar-item {
+  @apply flex w-full items-center gap-2 rounded-xl px-3 py-2 hover:cursor-pointer hover:bg-neutral-300;
+}
+
+/**
+ * Used in auth and pricing
+ */
+.auth-container {
+  @apply flex h-full flex-col overflow-scroll p-4 sm:p-8;
+}
+
+/**
+ * Dead center
+ * Might have cropped off part for high component
+ */
+.centered-container {
+  @apply flex h-full w-full flex-col items-center justify-center;
+}
