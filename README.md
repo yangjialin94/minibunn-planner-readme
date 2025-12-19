@@ -1,84 +1,97 @@
 # Minibunn Planner
 
-Minibunn Planner is a **full-stack productivity web application** designed to help users organize their **tasks, notes, journals, and calendars** in one seamless experience. It combines a clean and modern interface with a robust backend to support authentication, subscriptions, and reliable data storage.
+**Status:** Discontinued (2025)
 
-👉 Live site: [minibunnplanner.com](https://www.minibunnplanner.com/)  
-👉 This repository is **public for recruiters and collaborators to review the project’s scope and technology choices**.  
-The source code remains private.
+Minibunn Planner was a **full-stack productivity web application** designed to help users organize **tasks, notes, journals, and calendars** in a single, cohesive workspace. The project was built end-to-end as a personal SaaS to explore product design, system architecture, and subscription-based monetization.
+
+This repository is preserved **for review and documentation purposes** and reflects the final state of the project prior to shutdown.
 
 ---
 
 ## ✨ Features
 
-- **Task Management** – Create, edit, reorder, and complete tasks.  
-- **Notes & Journals** – Rich-text editor (Tiptap) for notes and daily journaling.  
-- **Calendar** – Manage events with date views and filtering.  
-- **Backlogs** – Organize larger goals alongside daily tasks.  
-- **User Accounts** – Authentication with Google Sign-In via Firebase.  
-- **Subscriptions** – Stripe integration for monthly & yearly plans.  
-- **Responsive Design** – Built for both desktop and mobile use.  
+- **Task Management** – Create, edit, reorder, and complete tasks  
+- **Notes & Journals** – Rich-text editor (Tiptap) for notes and journaling  
+- **Calendar** – Event scheduling with multiple date views  
+- **Backlogs** – Organize long-term goals alongside daily tasks  
+- **User Accounts** – Google Sign-In authentication  
+- **Subscriptions** – Monthly and yearly plans via Stripe  
+- **Responsive Design** – Optimized for desktop and mobile  
 
 ---
 
 ## 🛠 Tech Stack
 
-**Frontend (Web)**  
-- **Framework**: Next.js (React, TypeScript)  
-- **Styling**: SCSS  
-- **State Management**: Zustand + React Query + Context API  
-- **UI Enhancements**: Dnd-kit (drag-and-drop), Motion (animations), React-toastify (notifications), Lucide-react (icons)  
-- **Hosting**: Vercel  
+### Frontend (Web)
 
-**Backend (API)**  
-- **Framework**: FastAPI (Python)  
-- **Database**: PostgreSQL (SQLAlchemy ORM, Alembic for migrations)  
-- **Auth**: Firebase Authentication  
-- **Payments**: Stripe (checkout, subscription status, webhooks)  
-- **Scheduling**: APScheduler (background tasks)  
-- **Hosting**: Render  
-- **Testing**: Pytest with 97% coverage  
+- **Framework**: Next.js (React, TypeScript)
+- **Styling**: SCSS
+- **State Management**: Zustand, React Query, Context API
+- **UI / UX**: Dnd-kit, Motion, React-toastify, Lucide-react
+- **Deployment**: Vercel (inactive)
+
+### Backend (API)
+
+- **Framework**: FastAPI (Python)
+- **Database**: PostgreSQL (SQLAlchemy, Alembic)
+- **Authentication**: Firebase Authentication
+- **Payments**: Stripe (subscriptions, webhooks)
+- **Background Jobs**: APScheduler
+- **Deployment**: Render (inactive)
+- **Testing**: Pytest
 
 ---
 
 ## 🚀 Architecture Overview
 
-- **Frontend** consumes REST APIs from the FastAPI backend.  
-- **Backend** handles business logic, subscriptions, and persistence.  
-- **Firebase** ensures secure authentication across both layers.  
-- **Stripe** manages subscription billing and customer portal.  
+- Frontend communicates with the backend via REST APIs
+- Backend handles business logic, persistence, and subscription state
+- Firebase provides secure authentication
+- Stripe manages billing and customer subscriptions
+
+All production services have been **shut down** as part of the project sunset.
 
 ---
 
 ## 📸 Screenshots
 
 ### Calendar
-![Home Page](/screenshots/calendar-071825.png)
+
+![Calendar](/screenshots/calendar-071825.png)
 
 ### Tasks
-![Calendar Page](/screenshots/task-071825.png)
+
+![Tasks](/screenshots/task-071825.png)
 
 ### Notes
-![Notes Page](/screenshots/note-071825.png)
+
+![Notes](/screenshots/note-071825.png)
 
 ### Backlogs
-![Tasks Page](/screenshots/backlog-071825.png)
+
+![Backlogs](/screenshots/backlog-071825.png)
 
 ### User Profile
-![User Profile Page](/screenshots/user-071825.png)
+
+![User Profile](/screenshots/user-071825.png)
 
 ---
 
-## 📬 Contact
+## 🗂 Repo Structure
 
-Interested in learning more about Minibunn Planner?  
-- **Portfolio**: [jialinyang.com](https://www.jialinyang.com)
-- **LinkedIn**: [linkedin.com/in/jialin-yang-jy](https://www.linkedin.com/in/jialin-yang-jy)
-- **Email**: work@jialinyang.com
+```text
+minibunn-planner/
+├── README.md
+├── ARCHIVED.md
+├── screenshots/
+└── apps/
+    ├── api/        # backend (archived)
+    └── web/        # frontend (archived)
+```
 
 ---
 
 ## ⚖️ License
 
-This project is released under a **Proprietary License**.  
 - Code is **not open source** and cannot be copied, modified, or redistributed.  
 - This repository is for **review purposes only**.  
